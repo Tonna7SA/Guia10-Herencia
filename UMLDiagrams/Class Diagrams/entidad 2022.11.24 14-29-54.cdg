@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidad">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="entidad" visibility="public" xPosition="431.0" yPosition="66.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="entidad" visibility="public" xPosition="663.0" yPosition="275.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="entidad" visibility="public" xPosition="180.0" yPosition="275.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="entidad.Gato" target="entidad.Animal"/>
+    <IsRelation name="is" source="entidad.Perro" target="entidad.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
