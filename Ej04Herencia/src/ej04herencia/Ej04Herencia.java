@@ -41,7 +41,7 @@ public class Ej04Herencia {
         forma.add(circ2);
         
         for (Formas aux : forma) {
-            aux.Mostar();
+            aux.Mostrar();
         }
         
     }

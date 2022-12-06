@@ -28,7 +28,7 @@ public class Circulo implements Formas{
     }
 
     @Override
-    public void Mostar() {
+    public void Mostrar() {
         System.out.println("El Circulo, con radio de = "+radio);
         System.out.println("Tiene un area de: "+CalcularArea());
         System.out.println("Tiene un perimetro de: "+CalcularPerimetro());

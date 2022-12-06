@@ -31,7 +31,7 @@ public class Rectangulo implements Formas{
     }
 
     @Override
-    public void Mostar() {
+    public void Mostrar() {
         System.out.println("El Rectangulo, de lado1 = "+lado1+" y lado2 = "+lado2);
         System.out.println("Tiene un area de: "+CalcularArea());
         System.out.println("Tiene un perimetro de: "+CalcularPerimetro());

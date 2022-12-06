@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidad">
+  <ClassDiagramComponents>
+    <Class name="Edificio" package="entidad" visibility="public" isAbstract="true" xPosition="303.0" yPosition="1.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+        <Field name="ancho" type="double" visibility="protected"/>
+        <Field name="alto" type="double" visibility="protected"/>
+        <Field name="largo" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="ancho"/>
+          <Argument type="double" name="alto"/>
+          <Argument type="double" name="largo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAncho" returnType="double" visibility="public"/>
+        <Method name="setAncho" returnType="void" visibility="public">
+          <Argument type="double" name="ancho"/>
+        </Method>
+        <Method name="getAlto" returnType="double" visibility="public"/>
+        <Method name="setAlto" returnType="void" visibility="public">
+          <Argument type="double" name="alto"/>
+        </Method>
+        <Method name="getLargo" returnType="double" visibility="public"/>
+        <Method name="setLargo" returnType="void" visibility="public">
+          <Argument type="double" name="largo"/>
+        </Method>
+        <Method name="CalcularSuperficie" returnType="void" visibility="public"/>
+        <Method name="CalcularVolumen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EdificiodeOficinas" package="entidad" visibility="public" xPosition="526.0" yPosition="367.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="numerooficinas" type="int" visibility="private"/>
+        <Field name="persof" type="int" visibility="private"/>
+        <Field name="pisos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="numerooficinas"/>
+          <Argument type="int" name="persof"/>
+          <Argument type="int" name="pisos"/>
+          <Argument type="double" name="ancho"/>
+          <Argument type="double" name="alto"/>
+          <Argument type="double" name="largo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getNumerooficinas" returnType="int" visibility="public"/>
+        <Method name="setNumerooficinas" returnType="void" visibility="public">
+          <Argument type="int" name="numerooficinas"/>
+        </Method>
+        <Method name="getPersof" returnType="int" visibility="public"/>
+        <Method name="setPersof" returnType="void" visibility="public">
+          <Argument type="int" name="persof"/>
+        </Method>
+        <Method name="getPisos" returnType="int" visibility="public"/>
+        <Method name="setPisos" returnType="void" visibility="public">
+          <Argument type="int" name="pisos"/>
+        </Method>
+        <Method name="CantidadPersonas" returnType="void" visibility="public"/>
+        <Method name="CalcularSuperficie" returnType="void" visibility="public"/>
+        <Method name="CalcularVolumen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Polideportivo" package="entidad" visibility="public" xPosition="30.0" yPosition="367.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="techado" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="techado"/>
+          <Argument type="double" name="ancho"/>
+          <Argument type="double" name="alto"/>
+          <Argument type="double" name="largo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getTechado" returnType="Boolean" visibility="public"/>
+        <Method name="setTechado" returnType="void" visibility="public">
+          <Argument type="Boolean" name="techado"/>
+        </Method>
+        <Method name="CalcularSuperficie" returnType="void" visibility="public"/>
+        <Method name="CalcularVolumen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="entidad.Polideportivo" target="entidad.Edificio"/>
+    <IsRelation name="is" source="entidad.EdificiodeOficinas" target="entidad.Edificio"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

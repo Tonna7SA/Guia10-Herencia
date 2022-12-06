@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="hoteles.entidades">
+  <ClassDiagramComponents>
+    <Class name="Hotel" package="hoteles.entidades" visibility="public" xPosition="89.0" yPosition="20.0">
+      <Fields>
+        <Field name="cantidadHabitaciones" type="Integer" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCantidadHabitaciones" returnType="Integer" visibility="public"/>
+        <Method name="setCantidadHabitaciones" returnType="void" visibility="public">
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hotel1" package="hoteles.entidades" visibility="public" xPosition="89.0" yPosition="227.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="protected"/>
+        <Field name="superficie" type="Double" visibility="protected"/>
+        <Field name="bano" type="boolean" visibility="protected"/>
+        <Field name="ascensor" type="boolean" visibility="protected"/>
+        <Field name="calefaccion" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel2" package="hoteles.entidades" visibility="public" xPosition="596.0" yPosition="379.0">
+      <Fields>
+        <Field name="cajaSeguridad" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel3" package="hoteles.entidades" visibility="public" xPosition="89.0" yPosition="472.0">
+      <Fields>
+        <Field name="aireAcondicionado" type="boolean" visibility="protected"/>
+        <Field name="bar" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel4" package="hoteles.entidades" visibility="public" xPosition="596.0" yPosition="521.0">
+      <Fields>
+        <Field name="miniBarHabitacion" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel5" package="hoteles.entidades" visibility="public" isFinal="true" xPosition="126.0" yPosition="670.0">
+      <Fields>
+        <Field name="casino" type="boolean" visibility="protected"/>
+        <Field name="restaurant" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="hoteles.entidades.Hotel1" target="hoteles.entidades.Hotel"/>
+    <IsRelation name="is" source="hoteles.entidades.Hotel3" target="hoteles.entidades.Hotel2"/>
+    <IsRelation name="is" source="hoteles.entidades.Hotel5" target="hoteles.entidades.Hotel4"/>
+    <IsRelation name="is" source="hoteles.entidades.Hotel4" target="hoteles.entidades.Hotel3"/>
+    <IsRelation name="is" source="hoteles.entidades.Hotel2" target="hoteles.entidades.Hotel1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

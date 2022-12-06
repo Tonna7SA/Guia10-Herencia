@@ -94,10 +94,10 @@ public class ServicioElectrodomestico {
             e1.setPrecio(e1.getPrecio() + 100);
             
         }
-        if (e1.getPeso() >= 20 && e1.getPeso() < 49) {
+        if (e1.getPeso() >= 20 && e1.getPeso() < 50) {
             e1.setPrecio(e1.getPrecio() + 500);
         }
-        if (e1.getPeso() >= 50 && e1.getPeso() < 79) {
+        if (e1.getPeso() >= 50 && e1.getPeso() < 80) {
             e1.setPrecio(e1.getPrecio() + 800);
         }
         if (e1.getPeso() >= 80) {

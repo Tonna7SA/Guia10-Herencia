@@ -10,6 +10,6 @@ public interface Formas {
 
     public double CalcularArea();
     public double CalcularPerimetro();
-    public void Mostar();
+    public void Mostrar();
     
 }
