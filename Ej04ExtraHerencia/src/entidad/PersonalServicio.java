@@ -37,6 +37,9 @@ public class PersonalServicio extends Empleados {
         int opcion;
         do {
             System.out.println("Ingrese la seccion de trabajo ");
+           
+            
+            
             System.out.println("1- Biblioteca");
             System.out.println("2- Decanato");
             System.out.println("3- Secretaria");
